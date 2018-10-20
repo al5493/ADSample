@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout linlay;
-
     AlertDialog.Builder adb;
 
     @Override
@@ -20,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         linlay=findViewById(R.id.linlay);
-        adb=new AlertDialog.Builder(this);
     }
 
     public void nobutton(View view) {
@@ -87,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     public void threebuttons(View view) {
         adb=new AlertDialog.Builder(this);
 
-        adb.setTitle("5th Example: Two buttons");
+        adb.setTitle("5th Example: Three buttons");
         adb.setMessage("Choose 3 options:");
         adb.setIcon(R.drawable.droid);
         adb.setPositiveButton("Change", new DialogInterface.OnClickListener() {
